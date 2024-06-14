@@ -112,7 +112,7 @@ def game():
                     return render_template("error.html", site="/game", error_code=2)  # Handle case where mission is not found
         if session.get('mission_success'):
             session.pop('mission_success', None)  # Clear the flag after displaying the message
-            return render_template('game.html', user_id=user, end_time=end_time_timestamp, message="ミッション成功", episode=episode)
+            return render_template('game.html', user_id=user, end_time=end_time_timestamp, message="misssion succeed", episode=episode)
         return render_template('game.html', user_id=user, end_time=end_time_timestamp, episode=episode)
     else:
         return render_template("error.html", site="/game", error_code=1)  # Handle case where user is not found
