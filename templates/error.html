@@ -33,6 +33,9 @@
     <h1>Mission Error</h1>
     <p>You have already entered the code for this mission.</p>
     <p>You can only enter the cipher once.</p>
+    {% elif error_code == 6 %}
+    <h1>Mission Failed</h1>
+    <p>The Cipher code you entered is incorrect.</p>
     {% endif %}
 
     <a href={{ site }}>Go back to {{ site }}</a>  </body>
